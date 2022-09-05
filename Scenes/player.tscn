@@ -25,3 +25,5 @@ remote_path = NodePath("../Camera2D")
 position = Vector2( 0, 4 )
 current = true
 zoom = Vector2( 0.35, 0.35 )
+smoothing_enabled = true
+smoothing_speed = 10.0
