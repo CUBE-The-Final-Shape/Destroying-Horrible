@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/ground.png" type="Texture" id=2]
+[ext_resource path="res://Map_Parts/Wall.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7, 4 )
 
 [node name="Main" type="Node2D"]
 
@@ -20,7 +24,29 @@ position = Vector2( 490, 273 )
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="KinematicBody2D"]
 remote_path = NodePath("../../Camera2D")
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 0, 4 )
+shape = SubResource( 1 )
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 490, 273 )
 current = true
-zoom = Vector2( 0.3, 0.3 )
+zoom = Vector2( 0.35, 0.35 )
+
+[node name="Wall" parent="." instance=ExtResource( 3 )]
+position = Vector2( 321, 185 )
+
+[node name="Wall" parent="Wall" instance=ExtResource( 3 )]
+position = Vector2( 16, 0 )
+
+[node name="Wall" parent="Wall/Wall" instance=ExtResource( 3 )]
+position = Vector2( 16, 0 )
+
+[node name="Wall" parent="Wall/Wall/Wall" instance=ExtResource( 3 )]
+position = Vector2( 16, 0 )
+
+[node name="Wall" parent="Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
+position = Vector2( 16, 0 )
+
+[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
+position = Vector2( 16, 0 )
