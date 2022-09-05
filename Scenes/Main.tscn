@@ -1,39 +1,23 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/ground.png" type="Texture" id=2]
 [ext_resource path="res://Map_Parts/Wall.tscn" type="PackedScene" id=3]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 7, 4 )
-
 [node name="Main" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_left = -479.0
-margin_top = -322.0
+margin_top = -318.0
 margin_right = 1480.0
-margin_bottom = 875.0
+margin_bottom = 879.0
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 2
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
 position = Vector2( 490, 273 )
-
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="KinematicBody2D"]
-remote_path = NodePath("../../Camera2D")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
-position = Vector2( 0, 4 )
-shape = SubResource( 1 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 490, 273 )
-current = true
-zoom = Vector2( 0.35, 0.35 )
-smoothing_enabled = true
-smoothing_speed = 30.0
+speed = 200
 
 [node name="Wall" parent="." instance=ExtResource( 3 )]
 position = Vector2( 321, 185 )
