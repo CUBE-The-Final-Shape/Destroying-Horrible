@@ -32,6 +32,8 @@ shape = SubResource( 1 )
 position = Vector2( 490, 273 )
 current = true
 zoom = Vector2( 0.35, 0.35 )
+smoothing_enabled = true
+smoothing_speed = 30.0
 
 [node name="Wall" parent="." instance=ExtResource( 3 )]
 position = Vector2( 321, 185 )
