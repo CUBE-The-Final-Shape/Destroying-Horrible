@@ -6,11 +6,11 @@ export var fire_rate = 0.2
 var bullet = preload("res://Scenes/Bullet.tscn")
 var can_fire = true
 
-var mousepositoion
+var mouseposition
 
 func _process(delta):
-	mousepositoion = get_local_mouse_position()
-	rotation+= mousepositoion.angle() * 0.1
+	mouseposition = get_local_mouse_position()
+	rotation+= mouseposition.angle() * 0.1
 
 
 	if Input.is_action_pressed("fire") and can_fire:
