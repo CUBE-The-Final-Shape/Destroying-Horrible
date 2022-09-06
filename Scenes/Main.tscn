@@ -7,20 +7,16 @@
 [node name="Main" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_left = -479.0
-margin_top = -318.0
-margin_right = 1480.0
-margin_bottom = 879.0
+margin_left = 115.0
+margin_top = 22.0
+margin_right = 951.0
+margin_bottom = 519.0
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 2
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 490, 273 )
-speed = 200
-
 [node name="Wall" parent="." instance=ExtResource( 3 )]
-position = Vector2( 321, 185 )
+position = Vector2( 341, 185 )
 
 [node name="Wall" parent="Wall" instance=ExtResource( 3 )]
 position = Vector2( 16, 0 )
@@ -36,3 +32,7 @@ position = Vector2( 16, 0 )
 
 [node name="Wall" parent="Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
 position = Vector2( 16, 0 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 490, 273 )
+speed = 200
