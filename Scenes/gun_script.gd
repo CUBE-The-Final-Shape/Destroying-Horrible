@@ -1,13 +1,17 @@
 extends KinematicBody2D
 
-export var bullet_speed = 200
+export var bullet_speed = 300
 export var fire_rate = 0.2
 
 var bullet = preload("res://Scenes/Bullet.tscn")
 var can_fire = true
 
+var mousepositoion
+
 func _process(delta):
-	look_at(get_global_mouse_position())
+	mousepositoion = get_local_mouse_position()
+	rotation+= mousepositoion.angle() * 0.1
+
 
 	if Input.is_action_pressed("fire") and can_fire:
 		var bullet_instance = bullet.instance()
