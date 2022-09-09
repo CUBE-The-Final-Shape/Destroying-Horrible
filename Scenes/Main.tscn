@@ -176,4 +176,4 @@ position = Vector2( 16, 0 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
 position = Vector2( 500, 441 )
-speed = 200
+speed = 150

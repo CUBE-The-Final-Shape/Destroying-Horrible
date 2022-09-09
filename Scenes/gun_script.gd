@@ -15,8 +15,8 @@ func _process(delta):
 
 	if Input.is_action_pressed("fire") and can_fire:
 		
-		var player_speed = abs(get_parent().velocity.x)
-		print(player_speed)
+		var player_speed_x = abs(get_parent().velocity.x)
+		print(player_speed_x)
 		
 		var bullet_instance = bullet.instance()
 		bullet_instance.position = $BulletPoint.get_global_position()
