@@ -16,7 +16,7 @@ expand = true
 stretch_mode = 2
 
 [node name="Wall" parent="." instance=ExtResource( 3 )]
-position = Vector2( 123, 502 )
+position = Vector2( 460, 408 )
 
 [node name="Wall" parent="Wall" instance=ExtResource( 3 )]
 position = Vector2( 16, 0 )
@@ -33,147 +33,8 @@ position = Vector2( 16, 0 )
 [node name="Wall" parent="Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
 position = Vector2( 16, 0 )
 
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
-[node name="Wall" parent="Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall/Wall" instance=ExtResource( 3 )]
-position = Vector2( 16, 0 )
-
 [node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
 position = Vector2( 500, 441 )
 speed = 150
+
+[node name="Particles2D" type="Particles2D" parent="."]
