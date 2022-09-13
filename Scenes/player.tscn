@@ -30,12 +30,12 @@ zoom = Vector2( 0.2, 0.2 )
 smoothing_speed = 15.0
 
 [node name="Gun" type="KinematicBody2D" parent="."]
-position = Vector2( 0, 3 )
+position = Vector2( 0, 2.5 )
 script = ExtResource( 4 )
 
 [node name="Gun_Sprite" type="Sprite" parent="Gun"]
-position = Vector2( 13, 0 )
+position = Vector2( 13, 2.5 )
 texture = ExtResource( 3 )
 
 [node name="BulletPoint" type="Node2D" parent="Gun"]
-position = Vector2( 17, -2 )
+position = Vector2( 17, 0.5 )
