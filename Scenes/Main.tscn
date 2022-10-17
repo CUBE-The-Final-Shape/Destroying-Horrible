@@ -60,10 +60,11 @@ position = Vector2( 427, 413 )
 position = Vector2( 500, 441 )
 
 [node name="Health bar" parent="Player" instance=ExtResource( 7 )]
-margin_left = -93.0
-margin_top = -79.0
-margin_right = -93.0
-margin_bottom = -79.0
+margin_left = -10.0
+margin_top = -20.0
+margin_right = -10.0
+margin_bottom = -20.0
+rect_scale = Vector2( 0.108, 0.2 )
 
 [node name="Tree" type="StaticBody2D" parent="."]
 position = Vector2( 282, 339 )
