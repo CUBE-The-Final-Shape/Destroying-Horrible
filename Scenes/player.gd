@@ -4,31 +4,34 @@ signal killed()
 signal health_updated(health)
 
 export (int) var speed = 150
+export (int) var jump_strength = 200
+export (int) var gravity = 1000
 export (int) var max_health = 100
+const UP_DIRECTION = Vector2.UP
 onready var health = max_health setget _set_health
 
 var velocity = Vector2()
 
-func get_input():
-	velocity = Vector2()
-	if Input.is_action_pressed('right'):
-		velocity.x += 1
-	if Input.is_action_pressed('left'):
-		velocity.x -= 1
-	if Input.is_action_pressed('down'):
-		velocity.y += 1
-	if Input.is_action_pressed('up'):
-		velocity.y -= 1
-	velocity = velocity.normalized() * speed
+func _physics_process(delta):
+	
+	var horizontal_direction = (
+		Input.get_action_strength("right")
+		- Input.get_action_strength("left")
+	)
+	
+	velocity.x = horizontal_direction * speed
+	velocity.y += gravity * delta
+	
+	var is_jumping := Input.is_action_just_pressed("up") and is_on_floor()
+	
+	if is_jumping:
+		velocity.y = -jump_strength
+
+			
+	velocity = move_and_slide(velocity, UP_DIRECTION)
 	
 	if Input.is_action_pressed("k"):
 		damage(10)
-		
-
-func _physics_process(delta):
-	print(health)
-	get_input()
-	velocity = move_and_slide(velocity)
 	
 func damage(amount):
 	_set_health(health - amount)
