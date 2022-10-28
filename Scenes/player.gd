@@ -3,7 +3,7 @@ extends KinematicBody2D
 signal killed()
 signal health_updated(health)
 
-export (int) var speed = 150
+export (int) var speed = 100
 export (int) var jump_strength = 200
 export (int) var gravity = 1000
 export (int) var max_health = 100
@@ -47,3 +47,17 @@ func _set_health(value):
 		if health == 0:
 			kill()
 			emit_signal("killed")
+
+onready var _animated_sprite = $AnimatedSprite
+
+func _process(_delta):
+	if Input.is_action_pressed("ui_right"):
+		_animated_sprite.play("walk_right")
+	else:
+		_animated_sprite.play("idle_right")	
+
+#Har inte lyckats få animationer till vänster att fungera samtidigt som höger
+	#if Input.is_action_pressed("ui_left"):
+	#	_animated_sprite.play("walk_left")
+	#else:
+	#	_animated_sprite.play("idle_left")	
