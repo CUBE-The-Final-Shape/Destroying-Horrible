@@ -55,7 +55,6 @@ func _set_health(value):
 onready var _animated_sprite = $AnimatedSprite
 
 func _process(_delta):
-	print(right)
 	if Input.is_action_pressed("ui_right"):
 		_animated_sprite.play("walk_right")
 		right = true
