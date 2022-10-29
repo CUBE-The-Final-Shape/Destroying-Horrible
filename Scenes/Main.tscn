@@ -1,46 +1,24 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/ground.png" type="Texture" id=2]
 [ext_resource path="res://Map_Parts/Wall.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/enemy.tscn" type="PackedScene" id=4]
-[ext_resource path="res://sprites/box-tree.png" type="Texture" id=5]
-[ext_resource path="res://sprites/box-rocks.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/Health bar.tscn" type="PackedScene" id=7]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 6.5, 4 )
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 8, 8 )
 
 [node name="Main" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_left = -1384.0
-margin_top = 47.0
-margin_right = 1920.0
-margin_bottom = 542.0
+margin_left = -1360.0
+margin_top = 64.0
+margin_right = 1944.0
+margin_bottom = 559.0
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 2
 
-[node name="Stone" type="StaticBody2D" parent="."]
-position = Vector2( 408, 384 )
-
-[node name="Sprite2" type="Sprite" parent="Stone"]
-texture = ExtResource( 6 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Stone"]
-position = Vector2( -0.5, 4 )
-shape = SubResource( 1 )
-
 [node name="Wall" parent="." instance=ExtResource( 3 )]
 position = Vector2( 456, 408 )
 scale = Vector2( 10000, 1 )
-
-[node name="Enemy" parent="." instance=ExtResource( 4 )]
-position = Vector2( 360, 384 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 497, 376 )
@@ -51,18 +29,5 @@ margin_top = -20.0
 margin_right = -10.0
 margin_bottom = -20.0
 rect_scale = Vector2( 0.108, 0.2 )
-
-[node name="Tree" type="StaticBody2D" parent="."]
-position = Vector2( 296, 360 )
-z_index = 2
-
-[node name="Sprite" type="Sprite" parent="Tree"]
-position = Vector2( 0, 16 )
-scale = Vector2( 2, 2 )
-texture = ExtResource( 5 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree"]
-position = Vector2( 0, 24 )
-shape = SubResource( 2 )
 
 [connection signal="health_updated" from="Player" to="Player/Health bar" method="_on_Player_health_updated"]
