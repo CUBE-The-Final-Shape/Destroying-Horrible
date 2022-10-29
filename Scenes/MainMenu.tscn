@@ -37,6 +37,7 @@ margin_right = 288.0
 margin_bottom = 38.0
 text = "Start"
 icon = ExtResource( 2 )
+flat = true
 icon_align = 1
 
 [node name="Options" type="Button" parent="VBoxContainer"]
@@ -45,14 +46,17 @@ margin_right = 288.0
 margin_bottom = 80.0
 text = "Options"
 icon = ExtResource( 2 )
+flat = true
 icon_align = 1
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
+anchor_right = 0.032
 margin_top = 84.0
 margin_right = 288.0
 margin_bottom = 122.0
 text = "Quit"
 icon = ExtResource( 2 )
+flat = true
 icon_align = 1
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_Start_pressed"]
