@@ -5,3 +5,5 @@ func _process(_delta):
 		position = Vector2(40, -20)
 	elif Input.is_action_pressed("ui_left"):
 		position = Vector2(-40, -20)
+	else:
+		position = Vector2(0, -20)
