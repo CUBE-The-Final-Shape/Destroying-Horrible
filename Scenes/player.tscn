@@ -66,3 +66,4 @@ zoom = Vector2( 0.13, 0.13 )
 smoothing_enabled = true
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1, 3 )
