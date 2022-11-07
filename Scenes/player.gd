@@ -26,9 +26,16 @@ func _physics_process(delta):
 	
 	var is_jumping := Input.is_action_just_pressed("up") and is_on_floor()
 	
+	var is_crouching := Input.is_action_pressed("crouch")
+	
 	if is_jumping:
 		velocity.y = -jump_strength
-
+		
+	if is_crouching:
+		speed = 50
+		
+	if is_crouching == false:
+		speed = 100
 			
 	velocity = move_and_slide(velocity, UP_DIRECTION)
 	
