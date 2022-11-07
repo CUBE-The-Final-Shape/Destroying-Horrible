@@ -81,7 +81,7 @@ script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-animation = "crouch_idle_right"
+animation = "idle_right"
 speed_scale = 2.0
 
 [node name="Collision_Standing" type="CollisionShape2D" parent="."]
