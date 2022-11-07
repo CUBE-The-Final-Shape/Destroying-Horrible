@@ -7,7 +7,7 @@ export var right = true
 
 export (int) var speed = 100
 export (int) var jump_strength = 200
-export (int) var gravity = 1000
+export (int) var gravity = 800
 export (int) var max_health = 100
 const UP_DIRECTION = Vector2.UP
 onready var health = max_health setget _set_health
@@ -63,7 +63,7 @@ onready var _animated_sprite = $AnimatedSprite
 
 func _process(_delta):
 	if Input.is_action_pressed("crouch"):
-		get_node("Collision_Standing").disabled= true
+		get_node("Collision_Standing").disabled = true
 		if Input.is_action_pressed("ui_right"):
 			_animated_sprite.play("crouch_right")
 			right = true
@@ -78,7 +78,7 @@ func _process(_delta):
 		else:
 			_animated_sprite.play("crouch_idle_left")	
 	else:
-		get_node("Collision_Standing").disabled= false
+		get_node("Collision_Standing").disabled = false
 		if Input.is_action_pressed("ui_right"):
 			_animated_sprite.play("walk_right")
 			right = true
