@@ -27,7 +27,6 @@
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/crouch/crouch4.png" type="Texture" id=26]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/crouch/crouch5.png" type="Texture" id=27]
 
-
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 18 ) ],

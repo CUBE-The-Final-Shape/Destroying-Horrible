@@ -14,6 +14,10 @@ config/name="Destroying-Horrible"
 run/main_scene="res://Scenes/Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+SceneTransition="*res://Scripts/scene_transition.gd"
+
 [display]
 
 mouse_cursor/custom_image="res://sprites/crosshair.png"
