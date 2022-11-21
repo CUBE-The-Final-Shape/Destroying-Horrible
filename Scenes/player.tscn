@@ -1,7 +1,7 @@
 [gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_left/idle/militaryman1left.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/player.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/player.gd" type="Script" id=2]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/idle/militaryman1.png" type="Texture" id=3]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_left/crouch/crouch3.png" type="Texture" id=5]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/walking/militaryman6.png" type="Texture" id=6]
@@ -14,7 +14,7 @@
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_left/walking/militaryman4left.png" type="Texture" id=13]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_left/walking/militaryman6left.png" type="Texture" id=14]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_left/walking/militaryman2left.png" type="Texture" id=15]
-[ext_resource path="res://Scenes/Camera_anchor.gd" type="Script" id=16]
+[ext_resource path="res://Scripts/Camera_anchor.gd" type="Script" id=16]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_left/crouch/crouch4.png" type="Texture" id=17]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_left/crouch/crouch1.png" type="Texture" id=18]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_left/crouch/crouch5.png" type="Texture" id=19]
@@ -26,6 +26,7 @@
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/crouch/crouch3.png" type="Texture" id=25]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/crouch/crouch4.png" type="Texture" id=26]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/crouch/crouch5.png" type="Texture" id=27]
+
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
