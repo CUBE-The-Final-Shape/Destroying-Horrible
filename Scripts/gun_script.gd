@@ -11,12 +11,10 @@ var mouseposition
 func _process(delta):
 	mouseposition = get_local_mouse_position()
 	rotation+= mouseposition.angle() * 1
+	
+	
 
-
-	if Input.is_action_pressed("fire") and can_fire:
-		
-		var player_speed_x = abs(get_parent().velocity.x)
-		print(player_speed_x)
+	if Input.is_action_pressed("fire") and can_fire and is_visible():
 		
 		var bullet_instance = bullet.instance()
 		bullet_instance.position = $BulletPoint.get_global_position()
