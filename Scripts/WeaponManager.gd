@@ -13,9 +13,6 @@ func _ready():
 		weapon.hide()
 		
 	current_weapon.show()
-	print (current_weapon)
-	print (weapons[1])
-	
 	
 func _init():
 	return
@@ -25,7 +22,6 @@ func reload():
 	return
 	
 func switch_weapon(weapon):
-	print(weapon)
 	if weapon == current_weapon:
 		return
 		
