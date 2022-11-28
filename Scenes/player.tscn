@@ -1,8 +1,9 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_left/idle/militaryman1left.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/player.gd" type="Script" id=2]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/idle/militaryman1.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Revolver.tscn" type="PackedScene" id=4]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_left/crouch/crouch3.png" type="Texture" id=5]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/walking/militaryman6.png" type="Texture" id=6]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/walking/militaryman3.png" type="Texture" id=7]
@@ -26,6 +27,8 @@
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/crouch/crouch3.png" type="Texture" id=25]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/crouch/crouch4.png" type="Texture" id=26]
 [ext_resource path="res://sprites/military_sprites/Militaryman/animations_right/crouch/crouch5.png" type="Texture" id=27]
+[ext_resource path="res://Scenes/Shotgun.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Scripts/WeaponManager.gd" type="Script" id=29]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -102,3 +105,12 @@ position = Vector2( 0, -20 )
 current = true
 zoom = Vector2( 0.13, 0.13 )
 smoothing_enabled = true
+
+[node name="WeaponManager" type="Node2D" parent="."]
+script = ExtResource( 29 )
+
+[node name="Revolver" parent="WeaponManager" instance=ExtResource( 4 )]
+position = Vector2( 0, 3 )
+
+[node name="Shotgun" parent="WeaponManager" instance=ExtResource( 28 )]
+position = Vector2( 2, 3 )
