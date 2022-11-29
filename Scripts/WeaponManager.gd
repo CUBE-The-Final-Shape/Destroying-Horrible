@@ -4,6 +4,20 @@ onready var current_weapon = $Revolver
 
 var weapons: Array = []
 
+func _process(delta):
+		
+	var mpos = get_global_mouse_position()
+	var pos = global_position
+	
+	var rot = rad2deg((mpos - pos).angle())
+
+	if(rot >= -90 and rot <= 90):
+		current_weapon.get_node("AnimatedSprite").flip_v = false
+		current_weapon.get_node("BulletPoint").position = Vector2(7, -1)
+	else:
+		current_weapon.get_node("AnimatedSprite").flip_v = true
+		current_weapon.get_node("BulletPoint").position = Vector2(7, 1)
+
 func _ready():
 	weapons = get_children()
 	
