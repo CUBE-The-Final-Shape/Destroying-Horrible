@@ -27,4 +27,4 @@ frames = SubResource( 1 )
 animation = "Idle"
 
 [node name="BulletPoint" type="Node2D" parent="."]
-position = Vector2( 6, 0 )
+position = Vector2( 6, -1 )
