@@ -11,8 +11,6 @@ var mouseposition
 func _process(delta):
 	mouseposition = get_local_mouse_position()
 	rotation+= mouseposition.angle() * 1
-	
-	
 
 	if Input.is_action_pressed("fire") and can_fire and is_visible():
 		

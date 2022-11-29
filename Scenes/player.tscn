@@ -107,10 +107,9 @@ zoom = Vector2( 0.13, 0.13 )
 smoothing_enabled = true
 
 [node name="WeaponManager" type="Node2D" parent="."]
+position = Vector2( 0, 3 )
 script = ExtResource( 29 )
 
 [node name="Revolver" parent="WeaponManager" instance=ExtResource( 4 )]
-position = Vector2( 0, 3 )
 
 [node name="Shotgun" parent="WeaponManager" instance=ExtResource( 28 )]
-position = Vector2( 2, 3 )

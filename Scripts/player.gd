@@ -3,8 +3,6 @@ extends KinematicBody2D
 signal killed()
 signal health_updated(health)
 
-export var right = true
-
 export (int) var speed = 100
 export (int) var jump_strength = 200
 export (int) var gravity = 800
@@ -62,33 +60,62 @@ func _set_health(value):
 onready var _animated_sprite = $AnimatedSprite
 
 func _process(_delta):
+	var mpos = get_global_mouse_position()
+	var pos = global_position
+	
+	var rot = rad2deg((mpos - pos).angle())
+	
 	if Input.is_action_pressed("crouch"):
 		get_node("Collision_Standing").disabled = true
+		
+		
 		if Input.is_action_pressed("ui_right"):
-			_animated_sprite.play("crouch_right")
-			right = true
+			if(rot >= -90 and rot <= 90):
+				_animated_sprite.play("crouch_right")
+				$".".get_node("AnimatedSprite").flip_h = false
+			else:
+				_animated_sprite.play("crouch_right")	
+				$".".get_node("AnimatedSprite").flip_h = true
+
 
 		elif Input.is_action_pressed("ui_left"):
-			_animated_sprite.play("crouch_left")
-			right = false
+			if(rot >= -90 and rot <= 90):
+				_animated_sprite.play("crouch_left")
+				$".".get_node("AnimatedSprite").flip_h = true
+			else:
+				_animated_sprite.play("crouch_left")	
+				$".".get_node("AnimatedSprite").flip_h = false
 		
-		elif right == true:
+		elif(rot >= -90 and rot <= 90):
 			_animated_sprite.play("crouch_idle_right")	
-		
+			$".".get_node("AnimatedSprite").flip_h = false
 		else:
-			_animated_sprite.play("crouch_idle_left")	
+			_animated_sprite.play("crouch_idle_left")		
+			$".".get_node("AnimatedSprite").flip_h = false
 	else:
 		get_node("Collision_Standing").disabled = false
+		
+		
 		if Input.is_action_pressed("ui_right"):
-			_animated_sprite.play("walk_right")
-			right = true
+			if(rot >= -90 and rot <= 90):
+				_animated_sprite.play("walk_right")
+				$".".get_node("AnimatedSprite").flip_h = false
+			else:
+				_animated_sprite.play("walk_right")	
+				$".".get_node("AnimatedSprite").flip_h = true
+
 
 		elif Input.is_action_pressed("ui_left"):
-			_animated_sprite.play("walk_left")
-			right = false
+			if(rot >= -90 and rot <= 90):
+				_animated_sprite.play("walk_left")
+				$".".get_node("AnimatedSprite").flip_h = true
+			else:
+				_animated_sprite.play("walk_left")	
+				$".".get_node("AnimatedSprite").flip_h = false
 		
-		elif right == true:
+		elif(rot >= -90 and rot <= 90):
 			_animated_sprite.play("idle_right")	
-		
+			$".".get_node("AnimatedSprite").flip_h = false
 		else:
 			_animated_sprite.play("idle_left")	
+			$".".get_node("AnimatedSprite").flip_h = false
