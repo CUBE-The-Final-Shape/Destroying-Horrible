@@ -8,7 +8,7 @@ var can_fire = true
 
 var mouseposition
 
-func _process(delta):
+func _process(_delta):
 	mouseposition = get_local_mouse_position()
 	rotation+= mouseposition.angle() * 1
 	
