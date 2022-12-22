@@ -4,7 +4,7 @@ onready var current_weapon = $Revolver
 
 var weapons: Array = []
 
-func _process(delta):
+func _process(_delta):
 		
 	var mpos = get_global_mouse_position()
 	var pos = global_position

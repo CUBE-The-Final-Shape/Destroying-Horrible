@@ -67,8 +67,6 @@ func _process(_delta):
 	
 	if Input.is_action_pressed("crouch"):
 		get_node("Collision_Standing").disabled = true
-		
-		
 		if Input.is_action_pressed("ui_right"):
 			if(rot >= -90 and rot <= 90):
 				_animated_sprite.play("crouch_right")
@@ -76,16 +74,13 @@ func _process(_delta):
 			else:
 				_animated_sprite.play("crouch_right")	
 				$".".get_node("AnimatedSprite").flip_h = true
-
-
 		elif Input.is_action_pressed("ui_left"):
 			if(rot >= -90 and rot <= 90):
 				_animated_sprite.play("crouch_left")
 				$".".get_node("AnimatedSprite").flip_h = true
 			else:
 				_animated_sprite.play("crouch_left")	
-				$".".get_node("AnimatedSprite").flip_h = false
-		
+				$".".get_node("AnimatedSprite").flip_h = false	
 		elif(rot >= -90 and rot <= 90):
 			_animated_sprite.play("crouch_idle_right")	
 			$".".get_node("AnimatedSprite").flip_h = false
@@ -93,9 +88,7 @@ func _process(_delta):
 			_animated_sprite.play("crouch_idle_left")		
 			$".".get_node("AnimatedSprite").flip_h = false
 	else:
-		get_node("Collision_Standing").disabled = false
-		
-		
+		get_node("Collision_Standing").disabled = false	
 		if Input.is_action_pressed("ui_right"):
 			if(rot >= -90 and rot <= 90):
 				_animated_sprite.play("walk_right")
@@ -103,16 +96,13 @@ func _process(_delta):
 			else:
 				_animated_sprite.play("walk_right")	
 				$".".get_node("AnimatedSprite").flip_h = true
-
-
 		elif Input.is_action_pressed("ui_left"):
 			if(rot >= -90 and rot <= 90):
 				_animated_sprite.play("walk_left")
 				$".".get_node("AnimatedSprite").flip_h = true
 			else:
 				_animated_sprite.play("walk_left")	
-				$".".get_node("AnimatedSprite").flip_h = false
-		
+				$".".get_node("AnimatedSprite").flip_h = false	
 		elif(rot >= -90 and rot <= 90):
 			_animated_sprite.play("idle_right")	
 			$".".get_node("AnimatedSprite").flip_h = false
