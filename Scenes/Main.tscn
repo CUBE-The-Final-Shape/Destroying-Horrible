@@ -463,4 +463,7 @@ position = Vector2( 481, 367 )
 [node name="Box5" parent="." instance=ExtResource( 13 )]
 position = Vector2( 492, 367 )
 
+[node name="Enemy_left5" parent="." instance=ExtResource( 11 )]
+position = Vector2( 592, 728 )
+
 [connection signal="health_updated" from="Player" to="Player/Health bar" method="_on_Player_health_updated"]
