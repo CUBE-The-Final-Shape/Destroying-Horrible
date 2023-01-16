@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/props/bunker ground.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Scenes/enemy_left.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/enemy_right.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Scenes/box.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/BOSS.tscn" type="PackedScene" id=14]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 9, 0, 9.0625, 16, 0, 16, 0, 0 )
@@ -448,9 +449,6 @@ position = Vector2( 862, 520 )
 [node name="Enemy_right4" parent="." instance=ExtResource( 12 )]
 position = Vector2( 827, 504 )
 
-[node name="Boss" parent="." instance=ExtResource( 11 )]
-position = Vector2( 815, 792 )
-
 [node name="Box2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 488, 376 )
 
@@ -465,5 +463,8 @@ position = Vector2( 492, 367 )
 
 [node name="Enemy_left5" parent="." instance=ExtResource( 11 )]
 position = Vector2( 592, 728 )
+
+[node name="Boss" parent="." instance=ExtResource( 14 )]
+position = Vector2( 797, 759 )
 
 [connection signal="health_updated" from="Player" to="Player/Health bar" method="_on_Player_health_updated"]
