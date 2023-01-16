@@ -5,7 +5,7 @@ signal health_updated(health)
 
 export (int) var speed = 100
 export (int) var jump_strength = 200
-export (int) var gravity = 800
+export (int) var gravity = 700
 export (int) var max_health = 100
 const UP_DIRECTION = Vector2.UP
 onready var health = max_health setget _set_health
