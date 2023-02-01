@@ -56,7 +56,7 @@ func _set_health(value):
 			emit_signal("killed")
 
 
-#Waliking animations WORKS!!!
+#Walking animations WORKS!!!
 onready var _animated_sprite = $AnimatedSprite
 
 func _process(_delta):

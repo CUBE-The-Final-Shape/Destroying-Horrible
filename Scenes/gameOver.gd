@@ -14,9 +14,12 @@ func set_is_paused(value):
 	visible = is_paused
 
 func _on_Main_menu_pressed():
+# warning-ignore:return_value_discarded
 	get_tree().change_scene("res://Scenes/MainMenu.tscn")
+	
 
 func _on_Restart_pressed():
+# warning-ignore:return_value_discarded
 	get_tree().reload_current_scene()
 
 func _on_Quit_pressed():

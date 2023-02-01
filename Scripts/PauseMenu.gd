@@ -16,6 +16,7 @@ func _on_Resume_pressed():
 	self.is_paused = false
 
 func _on_Main_menu_pressed():
+# warning-ignore:return_value_discarded
 	get_tree().change_scene("res://Scenes/MainMenu.tscn")
 
 

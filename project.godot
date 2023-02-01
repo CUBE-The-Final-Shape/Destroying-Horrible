@@ -10,13 +10,9 @@ config_version=4
 
 [application]
 
-config/name="Destroying-Horrible"
+config/name="TheBunkerAssault"
 run/main_scene="res://Scenes/Main.tscn"
 config/icon="res://icon.png"
-
-[autoload]
-
-SceneTransition="*res://Scripts/scene_transition.gd"
 
 [display]
 
