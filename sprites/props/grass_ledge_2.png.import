@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/health-background.png-2c864adb8ba6b8c5e17c33286673fc0b.stex"
+path="res://.import/grass_ledge_2.png-24ab39f843f417a2cc14ea29ddf893b6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://health-background.png"
-dest_files=[ "res://.import/health-background.png-2c864adb8ba6b8c5e17c33286673fc0b.stex" ]
+source_file="res://sprites/props/grass_ledge_2.png"
+dest_files=[ "res://.import/grass_ledge_2.png-24ab39f843f417a2cc14ea29ddf893b6.stex" ]
 
 [params]
 
