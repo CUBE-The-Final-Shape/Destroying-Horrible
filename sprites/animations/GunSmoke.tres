@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=2]
+
+[ext_resource path="res://sprites/military_sprites/weapons/shotgun/Shotgun-blast1.png" type="Texture" id=1]
+[ext_resource path="res://sprites/military_sprites/weapons/shotgun/Shotgun-blast2.png" type="Texture" id=2]
+[ext_resource path="res://sprites/military_sprites/weapons/shotgun/Shotgun-blast3.png" type="Texture" id=3]
+
+[resource]
+animations = [ {
+"frames": [ null ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), null ],
+"loop": false,
+"name": "shoot",
+"speed": 5.0
+} ]

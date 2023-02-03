@@ -1,7 +1,9 @@
 extends KinematicBody2D
 
-export var bullet_speed = 300
-export var fire_rate = 0.8
+export var bullet_speed = 350
+export var fire_rate = 1
+onready var _animated_sprite = $gunmodel
+onready var _gunsmoke = $shootReaction
 
 var bullet = preload("res://Scenes/Bullet.tscn")
 var can_fire = true
@@ -20,5 +22,9 @@ func _process(_delta):
 		bullet_instance.apply_impulse(Vector2(), Vector2(bullet_speed, 0).rotated(rotation))
 		get_tree().get_root().add_child(bullet_instance)
 		can_fire = false
+		_gunsmoke.play("shoot")
+		_animated_sprite.play("Cook")
 		yield(get_tree().create_timer(fire_rate), "timeout")
 		can_fire = true
+		_animated_sprite.play("Idle")
+		_gunsmoke.play("idle")

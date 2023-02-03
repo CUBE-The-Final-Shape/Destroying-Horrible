@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/logo.png-65971a9268af4a8fde129ccb3bf3607e.stex"
+path="res://.import/oversizedRevolver2.png-ed25eebb13315f459eca2649044197d2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/main_menu/logo.png"
-dest_files=[ "res://.import/logo.png-65971a9268af4a8fde129ccb3bf3607e.stex" ]
+source_file="res://sprites/military_sprites/weapons/oversizedRevolver2.png"
+dest_files=[ "res://.import/oversizedRevolver2.png-ed25eebb13315f459eca2649044197d2.stex" ]
 
 [params]
 

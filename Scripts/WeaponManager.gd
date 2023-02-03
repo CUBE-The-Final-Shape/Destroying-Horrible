@@ -12,10 +12,10 @@ func _process(_delta):
 	var rot = rad2deg((mpos - pos).angle())
 
 	if(rot >= -90 and rot <= 90):
-		current_weapon.get_node("AnimatedSprite").flip_v = false
+		current_weapon.get_node("gunmodel").flip_v = false
 		current_weapon.get_node("BulletPoint").position = Vector2(7, -1)
 	else:
-		current_weapon.get_node("AnimatedSprite").flip_v = true
+		current_weapon.get_node("gunmodel").flip_v = true
 		current_weapon.get_node("BulletPoint").position = Vector2(7, 1)
 
 func _ready():

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lucka1.png-5375308ad7c069f27b5cb891c9b38e65.stex"
+path="res://.import/fence.png-53b74283a797d6718bb51c6330821079.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/props/lucka/lucka1.png"
-dest_files=[ "res://.import/lucka1.png-5375308ad7c069f27b5cb891c9b38e65.stex" ]
+source_file="res://sprites/props/fence.png"
+dest_files=[ "res://.import/fence.png-53b74283a797d6718bb51c6330821079.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

@@ -28,7 +28,7 @@ margin_bottom = -125.2
 rect_scale = Vector2( 2, 2 )
 
 [node name="Start" type="Button" parent="VBoxContainer"]
-margin_right = 328.0
+margin_right = 327.0
 margin_bottom = 38.0
 text = "Start"
 icon = ExtResource( 2 )
@@ -37,7 +37,7 @@ icon_align = 1
 
 [node name="Options" type="Button" parent="VBoxContainer"]
 margin_top = 42.0
-margin_right = 328.0
+margin_right = 327.0
 margin_bottom = 80.0
 text = "Options"
 icon = ExtResource( 2 )
@@ -46,7 +46,7 @@ icon_align = 1
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
 margin_top = 84.0
-margin_right = 328.0
+margin_right = 327.0
 margin_bottom = 122.0
 text = "Quit"
 icon = ExtResource( 2 )
