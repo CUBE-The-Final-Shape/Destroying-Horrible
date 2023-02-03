@@ -14,9 +14,11 @@ func _process(_delta):
 	if(rot >= -90 and rot <= 90):
 		current_weapon.get_node("gunmodel").flip_v = false
 		current_weapon.get_node("BulletPoint").position = Vector2(7, -1)
+		current_weapon.get_node("shootReaction").position = Vector2(12, -1)
 	else:
 		current_weapon.get_node("gunmodel").flip_v = true
 		current_weapon.get_node("BulletPoint").position = Vector2(7, 1)
+		current_weapon.get_node("shootReaction").position = Vector2(12, 0)
 
 func _ready():
 	weapons = get_children()
