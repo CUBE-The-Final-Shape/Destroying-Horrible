@@ -67,7 +67,7 @@ func _process(_delta):
 	var rot = rad2deg((mpos - pos).angle())
 	
 	# This is honestly a mess of animation code but it makes sure that the correct animation is played for every action. 
-	# It checks for if the player is crouch or not and makes sure the player always faces their cursor
+	# It checks for if the player is crouching or not and makes sure the player always faces their cursor
 	if Input.is_action_pressed("crouch"):
 		get_node("Collision_Standing").disabled = true
 		if Input.is_action_pressed("ui_right"):
