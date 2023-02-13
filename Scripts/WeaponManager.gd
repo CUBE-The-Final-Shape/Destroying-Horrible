@@ -1,7 +1,8 @@
 extends Node2D
-
+# This weapon manager was designed so that the game supports multiple weapons and can be updated to support more
 onready var current_weapon = $Revolver
 
+# The storage of weapons is done using an array defined below
 var weapons: Array = []
 
 func _process(_delta):
@@ -11,6 +12,7 @@ func _process(_delta):
 	
 	var rot = rad2deg((mpos - pos).angle())
 
+	# flips gun depending on cursor location so that it always faces right side up
 	if(rot >= -90 and rot <= 90):
 		current_weapon.get_node("gunmodel").flip_v = false
 		current_weapon.get_node("BulletPoint").position = Vector2(7, -1)
@@ -21,6 +23,8 @@ func _process(_delta):
 		current_weapon.get_node("shootReaction").position = Vector2(12, 0)
 
 func _ready():
+	# the array is created from the children of the WeaponManager node on the player scene
+	# The first weapon is the first child the second weapon is the second child and so on
 	weapons = get_children()
 	
 	print (weapons)
@@ -32,7 +36,6 @@ func _ready():
 	
 func _init():
 	return
-		
 		
 func reload():
 	return

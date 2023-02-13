@@ -2,6 +2,7 @@ extends RemoteTransform2D
 
 func _process(_delta):
 
+# Makes the camera more dynamic. Moves with player
 	if Input.is_action_pressed("crouch"):
 		position = Vector2(0, 5)
 		if Input.is_action_pressed("ui_right"):

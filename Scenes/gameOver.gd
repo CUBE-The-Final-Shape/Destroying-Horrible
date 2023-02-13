@@ -1,6 +1,6 @@
 extends Control
 var is_paused = false setget set_is_paused
-
+# Brings up Game Over screen
 func _ready():
 	var player = get_tree().get_root().find_node("Player",true,false)
 	player.connect("killed", self, "gameOver")
@@ -17,7 +17,6 @@ func _on_Main_menu_pressed():
 # warning-ignore:return_value_discarded
 	get_tree().change_scene("res://Scenes/MainMenu.tscn")
 	
-
 func _on_Restart_pressed():
 # warning-ignore:return_value_discarded
 	get_tree().reload_current_scene()
