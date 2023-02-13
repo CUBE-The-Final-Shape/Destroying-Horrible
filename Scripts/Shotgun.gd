@@ -11,11 +11,17 @@ var can_fire = true
 var mouseposition
 
 func _process(_delta):
+	# Aims gun towards mouse
 	mouseposition = get_local_mouse_position()
 	rotation+= mouseposition.angle() * 1
 	
+	# Only shoots if gun is vissible
 	if Input.is_action_pressed("fire") and can_fire and is_visible():
 		
+		# Spawns a bullet att the BulletPoint node on the selected weapon.
+		# Rotation and force is applied to the bullet to make it fly across the screen
+		# can_fire is set to false to prevent unrealistic shooting intervals. Limited by the fire_rare var
+		# _animated_sprite plays animations for shooting
 		var bullet_instance = bullet.instance()
 		bullet_instance.position = $BulletPoint.get_global_position()
 		bullet_instance.rotation_degrees = rotation_degrees
