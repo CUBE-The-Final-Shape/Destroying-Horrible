@@ -17,6 +17,7 @@ func _on_Resume_pressed():
 
 # changes scene to main menu
 func _on_Main_menu_pressed():
+# The comment below this one tells Godot to discard whatever value the change_scene function returns
 # warning-ignore:return_value_discarded
 	get_tree().change_scene("res://Scenes/MainMenu.tscn")
 

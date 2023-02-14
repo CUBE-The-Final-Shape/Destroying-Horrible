@@ -29,14 +29,17 @@ func _physics_process(delta):
 	if is_jumping:
 		velocity.y = -jump_strength
 		
+	# sets the players speed to 50 from 100 to slow the player down while crouching
 	if is_crouching:
 		speed = 50
-		
+	
+	# reverses the speed change for when the player stops crouching
 	if is_crouching == false:
 		speed = 100
 			
 	velocity = move_and_slide(velocity, UP_DIRECTION)
 	
+	# Tests the health system by damaging the player if they pres k on their keyboard
 	if Input.is_action_pressed("k"):
 		damage(10)
 	
@@ -46,6 +49,7 @@ func damage(amount):
 func kill():
 	pass
 
+# Health script. If health is 0 the player dies
 func _set_health(value):
 	var prev_health = health
 	health = clamp(value, 0, max_health)
@@ -56,7 +60,7 @@ func _set_health(value):
 			emit_signal("killed")
 
 
-# Animation code bellow. It is a mess
+# Animation code below. It is a mess
 onready var _animated_sprite = $AnimatedSprite
 
 func _process(_delta):

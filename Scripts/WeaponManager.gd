@@ -13,6 +13,7 @@ func _process(_delta):
 	var rot = rad2deg((mpos - pos).angle())
 
 	# flips gun depending on cursor location so that it always faces right side up
+	# Also adjusts position of BulletPoint and shootReaction to match the flipped gun
 	if(rot >= -90 and rot <= 90):
 		current_weapon.get_node("gunmodel").flip_v = false
 		current_weapon.get_node("BulletPoint").position = Vector2(7, -1)
