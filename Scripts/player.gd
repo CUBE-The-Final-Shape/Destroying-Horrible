@@ -59,9 +59,7 @@ func _set_health(value):
 			kill()
 			emit_signal("killed")
 
-
 # Animation code below. It is a mess
-
 func _process(_delta):
 	# Checks for cursor position. The data is used to always keep the player facing the cursor
 	var mpos = get_global_mouse_position()
